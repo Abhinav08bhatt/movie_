@@ -1,18 +1,24 @@
-# movie_
+# movie:time
 
-A new Flutter project.
+Flutter app for browsing movies (TMDB). Android + Linux.
 
-## Getting Started
+## Run
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run --dart-define=TMDB_API_KEY=your_key
+```
 
-A few resources to get you started if this is your first Flutter project:
+You can also paste a key into `kTmdbApiKeyFallback` in `lib/config.dart` for local use. Do not commit a real key.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Layout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# movie_
+| Path | What |
+| --- | --- |
+| `lib/` | App code |
+| `android/` | Android host |
+| `linux/` | Linux host |
+| `test/` | Widget tests |
+| `mock_ups/` | Design screenshots (not bundled in the app) |
+
+Build a debug APK with `flutter build apk` — do not check APKs into git.
